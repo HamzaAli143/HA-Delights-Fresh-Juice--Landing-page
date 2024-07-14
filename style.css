@@ -1,0 +1,405 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* font-family: 'poppins' , sans-serif; */
+}
+
+
+                                            /* NAVBAR  */
+
+#banner{
+    position: relative;
+    background-color: black;
+    z-index: 1;
+}
+#banner::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: url("./107366422.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: .8;
+}
+nav{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    backdrop-filter: blur(20px);
+    z-index: 1000;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 7%;
+    background-color: #111111;
+}
+.left-logo img{
+    border-radius: 100%;
+}
+.right-menus ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+}
+.right-menus ul a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Arial Rounded MT';
+    transition: .3s all ease-in-out;
+}
+.right-menus ul a:hover{
+    color: #4D7F0D;
+    text-decoration: underline 2px #4D7F0D;
+    text-underline-offset: 5px;
+}
+                                            /* HEADER CONTAINER  */
+.header-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 12% 0;
+}
+.header-container .container-text{
+    font-family: 'poppins' , sans-serif;
+    background-color: rgba(0, 0, 0, 0.87);
+    color: white;
+    padding: 20px;
+    line-height: 39px;
+    border-radius: 5px;
+}
+.container-text p{
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+.container-text h1{
+    font-size: 45px;
+    border: 3px solid white;
+    padding: 5px;
+}
+
+                                                    /* ABOUT US CONTAINER  */
+
+#AboutUsContainer{
+    text-align: center;
+    padding: 5% 0;
+    font-family: 'poppins' , sans-serif;
+}
+#AboutUsContainer h2{
+    font-size: 50px;
+}
+#AboutUsContainer p{
+    font-size: 13px;
+    padding: 20px;
+}
+#AboutUsContainer .second-p{
+    padding: 10px 190px 50px 190px;
+    font-size: 17px;
+}
+
+                                                    /* GALLERY CONTAINER  */
+                                                        
+#GalleryContainer{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    color: white;
+    backdrop-filter: blur(30px);
+    padding: 5% 0 2% 0;
+
+}
+#banner-2{
+    background: url("./mix-fruit-juice.jpg");
+    /* background-clip: fixed;
+    background-attachment: fixed; */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.text-part{
+    grid-column-start: 1;
+    grid-column-end: 13;
+    font-family: 'poppins' , sans-serif;
+}
+.text-part h3{
+    font-size: 50px;
+    color: white;
+}
+.text-part p{
+    font-size: 13px;
+    padding: 20px;
+}
+.text-part hr{
+    width: 35%;
+    height: 2px;
+    margin:  auto;
+    border: none;
+    border-radius: 1px;
+    background-color: rgba(255, 255, 255, 0.603);
+}
+.gallery-items{
+    grid-column-start: 1;
+    grid-column-end: 13;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 30px 0;
+    justify-content: center;
+    align-items: center;
+}
+.gallery-items img{
+    border-radius: 5px;
+}
+
+                                                        /* PORTFOLIO CONTAINER */
+#PortfolioContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 5% 10%;
+}
+.heading-part{
+    grid-column-start: 1;
+    grid-column-end: 13;
+    font-family: 'poppins' , sans-serif;
+    text-align: center;
+}
+.heading-part h4{
+    font-size: 48px;
+    color: rgb(0, 0, 0);
+}
+.portfolio-buttons{
+    grid-column-start: 1;
+    grid-column-end: 13;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    gap: 20px;
+    /* width: 340%; */
+    /* border: 2px solid black; */
+}
+.portfolio-buttons button{
+    background-color: white;
+    color: black;
+    border: none;
+    font-weight: bold;
+    padding: 9px;
+    border-radius: 15px;
+    transition: .3s all ease-in-out;
+}
+.portfolio-buttons .active{
+    cursor: pointer;
+    background-color: #008b07;
+    color: white;
+}
+.portfolio-buttons button:hover{
+    cursor: pointer;
+    background-color: #008b07;
+    color: white;
+}
+.portfolio-items{
+    grid-column-start: 1;
+    grid-column-end: 13;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.img1{
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+.img2{
+    grid-column-start: 5;
+    grid-column-end: 9;
+}
+.img3{
+    grid-column-start: 9;
+    grid-column-end: 13;
+}
+.img4{
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+.img5{
+    grid-column-start: 5;
+    grid-column-end: 9;
+}
+.img6{
+    grid-column-start: 9;
+    grid-column-end: 13;
+}
+.img1, .img2, .img3, .img4, .img5, .img6{
+    /* border: 2px solid ; */
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: .3s all ease-in-out;
+    overflow: hidden;
+    transition: .3s all ease;
+    border-radius: 5px;
+}
+.img1 img, .img2 img, .img3 img, .img4 img, .img5 img, .img6 img{
+    mix-blend-mode: darken;
+}
+.image{
+    transition: .3s all ease;
+}
+.img1:hover .image, .img2:hover .image, .img3:hover .image, .img4:hover .image, .img5:hover .image, .img6:hover .image{
+    transform: scale(1.1);
+}
+.img1:hover .absolute, .img2:hover .absolute, .img3:hover .absolute, .img4:hover .absolute, .img5:hover .absolute, .img6:hover .absolute{
+    transform: translateY(0%);
+}
+.img1:hover, .img2:hover, .img3:hover, .img4:hover, .img5:hover, .img6:hover{
+    background: radial-gradient( transparent ,  rgba(61, 107, 0, 0.767));
+    cursor: pointer;
+}
+.img1 a, .img2 a, .img3 a, .img4 a, .img5 a, .img6 a{
+    text-decoration: none;
+    color: white;
+    font-family: 'poppins', sans-serif;
+}
+.absolute{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    background: rgba(5, 5, 5, 0.836);
+    height: 15%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(200%);
+    transition: .3s all ease;
+}
+.absolute img{
+    z-index: 1;
+    mix-blend-mode: difference;
+}
+
+
+                                                        /* CONTACT US CONTAINER */
+#ContactUsContainer{
+    text-align: center;
+    font-family: 'poppins', sans-serif;
+    padding: 15% 0;
+    color: white;
+    background-color: #4D7F0D;
+}
+
+
+
+
+footer{
+    background: url("./mix-fruit-juice.jpg");
+    /* background-clip: fixed; */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#FooterContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 5% 10%;
+    font-family: 'poppins', sans-serif;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.418);
+    backdrop-filter: blur(30px);
+}
+.link-part{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    font-family: 'poppins', sans-serif;
+}
+.link-part .icons{
+    display: flex;
+    padding-top: 20px;
+    align-items: center;
+    gap: 10px;
+}
+.link-part .icons img{
+    opacity: .4;
+    transition: .3s all ease-in-out;
+}
+.link-part .icons img:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+.quick-links{
+    grid-column-start: 5;
+    grid-column-end: 9;
+    font-family: 'poppins', sans-serif;
+    padding: 15% 20px 20px;
+}
+.quick-links ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 15%;
+    padding: 15% 20px 20px;
+}
+.quick-links ul a{
+    text-decoration: none;
+    font-family: 'Arial Rounded MT';
+    color: white;
+    padding: 5px;
+    transition: .3s all ease-in-out;
+}
+.quick-links ul a:hover{
+    color: #4D7F0D;
+}
+.newsletter{
+    grid-column-start: 9;
+    grid-column-end: 13;
+    padding-top: 15%;
+    
+}
+.newsletter form{
+    padding: 30px;
+    text-align: left;
+}
+.newsletter form input{
+    width: 100%;
+    padding: 15px;
+    background-color: transparent;
+    border-radius: 30px;
+    border: 2px solid white;
+    margin-top: 10px;
+    outline: none;
+}
+.newsletter form input::placeholder{
+    color: white;
+    font-size: 16px;
+}
+.newsletter form button{
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 10px 30px;
+    color: white;
+    margin-top: 10px;
+    border-radius: 20px;
+    text-align: left;
+    margin-left: 10px;
+}
+.last-line{
+    color: white;
+    padding: 2% 10%;
+    display: flex;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.795);
+    backdrop-filter: blur(30px);
+    font-family: 'poopins', sans-serif;
+}
